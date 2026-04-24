@@ -17,6 +17,7 @@
         .text-brand { color: #ed2b75; }
         .border-brand { border-color: #ed2b75; }
         
+        #carousel-track { will-change: transform; } /* Otimização para performance */
         #carousel-track img { flex-shrink: 0; }
         .animate-float { animation: float 3s ease-in-out infinite; }
         @keyframes float {
@@ -40,7 +41,7 @@
         </div>
         <div class="flex justify-center bg-transparent">
             <span id="social-proof" class="inline-flex items-center rounded-b-2xl bg-black text-white px-4 py-1 text-[10px] md:text-sm shadow">
-                Eduarda de Curitiba acabou de comprar
+                Carregando...
             </span>
         </div>
     </div>
@@ -180,25 +181,25 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="bg-gray-50 p-4 rounded-2xl text-center">
-                    <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/comprador1.webp" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/comprador1.webp" class="w-full h-40 object-cover rounded-lg mb-4" loading="lazy">
                     <div class="text-yellow-400 text-xs mb-2">★★★★★</div>
                     <p class="italic text-[12px]">“Em 17 dias de uso já percebi diferença! Pele muito mais clara e macia, sem irritar. Recomendo!”</p>
                     <p class="mt-2 font-bold text-xs">— Juliana, 32 anos</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-2xl text-center">
-                    <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/comprador2.webp" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/comprador2.webp" class="w-full h-40 object-cover rounded-lg mb-4" loading="lazy">
                     <div class="text-yellow-400 text-xs mb-2">★★★★★</div>
                     <p class="italic text-[12px]">“Já testei outros produtos e nunca funcionou. O PPClear foi o único que clareou sem agredir.”</p>
                     <p class="mt-2 font-bold text-xs">— Camila, 28 anos</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-2xl text-center border-2 border-brand">
-                    <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/comprador4.webp" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/comprador4.webp" class="w-full h-40 object-cover rounded-lg mb-4" loading="lazy">
                     <div class="text-yellow-400 text-xs mb-2">★★★★★</div>
                     <p class="italic text-[12px]">“Eu não acreditava que ia ver resultado tão rápido… em menos de 15 dias minha pele já estava mais uniforme. Zero ardência, só conforto!”</p>
                     <p class="mt-2 font-bold text-xs">— Renata, 35 anos</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-2xl text-center">
-                    <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/comprador3.webp" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/comprador3.webp" class="w-full h-40 object-cover rounded-lg mb-4" loading="lazy">
                     <div class="text-yellow-400 text-xs mb-2">★★★★★</div>
                     <p class="italic text-[12px]">“Depois da gravidez fiquei incomodada com o escurecimento. O PPClear devolveu minha confiança, hoje me sinto muito melhor comigo mesma.”</p>
                     <p class="mt-2 font-bold text-xs">— Aline, 47 anos</p>
@@ -262,7 +263,7 @@
             
             <div class="grid md:grid-cols-3 gap-8 items-center">
                 <div class="bg-white p-8 rounded-3xl shadow-lg text-center flex flex-col h-full">
-                    <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/kit1.webp" class="w-32 mx-auto mb-4">
+                    <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/kit1.webp" class="w-32 mx-auto mb-4" loading="lazy">
                     <h3 class="font-bold text-xl mb-2">1 PPClear</h3>
                     <p class="text-gray-400 line-through text-sm">R$ 89,90</p>
                     <p class="text-3xl font-bold text-brand">R$ 39,90</p>
@@ -272,7 +273,7 @@
 
                 <div class="bg-white p-8 rounded-3xl shadow-2xl text-center border-4 border-brand transform scale-105 relative flex flex-col h-full">
                     <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand text-white px-4 py-1 rounded-full text-xs font-bold uppercase">⭐ Mais Vendido</div>
-                    <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/kit3.webp" class="w-44 mx-auto mb-4">
+                    <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/kit3.webp" class="w-44 mx-auto mb-4" loading="lazy">
                     <h3 class="font-bold text-2xl mb-2">3 PPClear</h3>
                     <p class="text-gray-400 line-through text-sm">R$ 159,90</p>
                     <p class="text-4xl font-bold text-brand">R$ 99,90</p>
@@ -282,7 +283,7 @@
                 </div>
 
                 <div class="bg-white p-8 rounded-3xl shadow-lg text-center flex flex-col h-full">
-                    <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/kit2.webp" class="w-40 mx-auto mb-4">
+                    <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/kit2.webp" class="w-40 mx-auto mb-4" loading="lazy">
                     <h3 class="font-bold text-xl mb-2">2 PPClear</h3>
                     <p class="text-gray-400 line-through text-sm">R$ 109,90</p>
                     <p class="text-3xl font-bold text-brand">R$ 69,99</p>
@@ -300,22 +301,24 @@
     </section>
 
     <section class="py-14 bg-white px-6">
-        <div class="max-w-4xl mx-auto text-center">
+        <div class="max-w-6xl mx-auto text-center">
             <h2 class="font-serif text-3xl font-bold mb-10 text-brand">Como utilizar o sérum clareador?</h2>
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 <div>
-                    <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/Tuto1.webp" class="rounded-xl mb-4 mx-auto w-48">
+                    <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/Tuto1.webp" class="rounded-xl mb-4 mx-auto w-48 h-48 object-cover" loading="lazy">
                     <p class="text-sm font-bold">1. Lave bem a região antes de dormir.</p>
                 </div>
                 <div>
-                    <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/Tuto2.webp" class="rounded-xl mb-4 mx-auto w-48">
-                    <p class="text-sm font-bold">2. Aplique 1 gota de cada lado da vulva (uso externo).</p>
+                    <img src="https://i.imgur.com/au6QHuj.jpeg" class="rounded-xl mb-4 mx-auto w-48 h-48 object-cover" loading="lazy">
+                    <p class="text-sm font-bold">2. Seque a região suavemente com uma toalha limpa.</p>
                 </div>
                 <div>
-                    <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/Tuto1.webp" class="rounded-xl mb-4 mx-auto w-48 opacity-70">
-                    <p class="text-sm font-bold">3. Massageie suavemente até completa absorção.</p>
+                    <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/Tuto2.webp" class="rounded-xl mb-4 mx-auto w-48 h-48 object-cover" loading="lazy">
+                    <p class="text-sm font-bold">3. Aplique 1 gota de cada lado da vulva (uso externo)Massageie suavemente até completa absorção.</p>
                 </div>
-            </div>
+                <div>
+                     
+                    
             <p class="mt-8 text-xs text-red-500 font-bold uppercase">⚠️ Não aplicar internamente.</p>
         </div>
     </section>
@@ -324,7 +327,7 @@
         <div class="max-w-4xl mx-auto space-y-6">
             <h2 class="font-serif text-3xl font-bold">Você está 100% segura.</h2>
             <p class="text-gray-600">Use o PPClear por até 7 dias. Se não notar melhora, devolvemos todo o seu dinheiro. Sem perguntas, sem enrolação.</p>
-            <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/selo.webp" class="w-48 mx-auto">
+            <img src="https://raw.githubusercontent.com/bruno-pkg/lp-pelecalma/refs/heads/main/selo.webp" class="w-48 mx-auto" loading="lazy">
         </div>
     </section>
 
@@ -368,18 +371,26 @@
     </footer>
 
     <script>
-        // Carrossel
+        // Carrossel - Otimizado para performance com will-change e verificações
         const track = document.getElementById('carousel-track');
-        if(track){
+        if(track && track.children.length > 0){
+            // Duplica o conteúdo para o efeito infinito
             track.innerHTML += track.innerHTML;
             let x = 0;
+            // Define uma velocidade constante (pixels por frame)
+            const speed = 0.6;
+            
             function scroll() {
-                x -= 0.6;
-                if (Math.abs(x) >= track.scrollWidth/2) x = 0;
+                x -= speed;
+                // Reinicia quando metade do track (o conteúdo original) foi rolado
+                if (Math.abs(x) >= track.scrollWidth / 2) {
+                    x = 0;
+                }
                 track.style.transform = `translateX(${x}px)`;
                 requestAnimationFrame(scroll);
             }
-            scroll();
+            // Inicia o scroll
+            requestAnimationFrame(scroll);
         }
 
         // Prova Social
@@ -387,11 +398,16 @@
         const nomes = ["Eduarda","Mariana","Márcia","Ana","Rafaela","Camila","Joana","Beatriz"];
         const cidades = ["Curitiba","São Paulo","Rio de Janeiro","Belo Horizonte","Salvador"];
         
-        setInterval(() => {
+        function updateSocialProof() {
+            if(!proof) return;
             const nome = nomes[Math.floor(Math.random()*nomes.length)];
             const cidade = cidades[Math.floor(Math.random()*cidades.length)];
-            if(proof) proof.textContent = `${nome} de ${cidade} acabou de comprar`;
-        }, 4000);
+            proof.textContent = `${nome} de ${cidade} acabou de comprar`;
+        }
+
+        // Inicia e define o intervalo
+        updateSocialProof();
+        setInterval(updateSocialProof, 4000);
     </script>
 </body>
 </html>
